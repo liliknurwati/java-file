@@ -1,0 +1,5 @@
+FROM openjdk: 8
+COPY . /java-file
+WORKDIR /java-file
+RUN ["javac", "Fishmarket.java"]
+ENTRYPOINT["java", "Fishmarket"]
